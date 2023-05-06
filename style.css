@@ -1,0 +1,39 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-custom .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar-custom .navbar-logo span {
+  color: var(--primary);
+}
+
+.bg-custom {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.px-6 {
+  padding-right: 0rem !important;
+  padding-left: 10rem !important;
+}

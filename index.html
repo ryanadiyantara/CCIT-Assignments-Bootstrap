@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Web Bootstrap - Ryan</title>
+
+    <!-- Bootstrap Style -->
+    <link
+      href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link href="style-custom.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark px-5 navbar-custom"
+      aria-label="Offcanvas navbar large"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-logo" href="#">kenanganryan.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+              kenanganryan
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#About"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Menu"
+                  >Menu</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex mt-3 mt-lg-0" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container col-xxl-8 px-4 py-5 height-100" id="Home">
+      <div
+        class="row flex-lg-row-reverse align-items-center g-5 py-5 hero-custom"
+      >
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="img/Coffea-1.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Let's Enjoy a Cup of Coffee
+          </h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repellendus assumenda nulla commodi placeat ratione? Minus, illo
+            ullam error voluptatem dignissimos quo veniam hic, quam fugit
+            reiciendis alias officia placeat similique?
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Galery Start -->
+    <main id="About">
+      <!-- About -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner text-black">
+          <div class="carousel-item active height-100 carousel-custom">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>The Highest Quality Coffee in Indonesia.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  placeat?.
+                </p>
+                <p>
+                  <a class="btn btn-outline-secondary btn-lg px-4" href="#"
+                    >Read Articles</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item height-100 carousel-custom">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Being a Responsible Company.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  placeat?.
+                </p>
+                <p>
+                  <a class="btn btn-outline-secondary btn-lg px-4" href="#"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item height-100 carousel-custom">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>More Than 200+ Booths in Indonesia.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  placeat?.
+                </p>
+                <p>
+                  <a class="btn btn-outline-secondary btn-lg px-4" href="#"
+                    >Find a Store</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Menu -->
+      <div id="Menu" class="container marketing menu-custom height-100">
+        <h1 class="display-5 fw-bold text-center text-body-emphasis lh-1 mb-3">
+          Our Menu
+        </h1>
+        <hr class="featurette-divider" />
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              />
+            </svg>
+            <h2 class="fw-normal">Coffea 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, sed.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              />
+            </svg>
+            <h2 class="fw-normal">Coffea 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, sed.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              />
+            </svg>
+            <h2 class="fw-normal">Coffea 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, sed.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              />
+            </svg>
+            <h2 class="fw-normal">Food 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, sed.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              />
+            </svg>
+            <h2 class="fw-normal">Food 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, sed.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              />
+            </svg>
+            <h2 class="fw-normal">Food 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, sed.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Galery End -->
+
+    <!-- Footer Start -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#About" class="nav-link px-2 text-body-secondary">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Menu" class="nav-link px-2 text-body-secondary">Menu</a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2023 RyanAhbrew, Inc</p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
